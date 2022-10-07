@@ -9,6 +9,10 @@
 body{
     font-family: 'Inter', sans-serif;
 }
+img{
+    width: 100%;
+    height: 100%;
+}
 /* ==== Common Fix ends here==== */
 /* ===== First section starts here===== */
 .firstsection{
@@ -61,28 +65,90 @@ span{
 
 /* ===== Second section starts here===== */
 .secondsection{
-    height: 460px;
     display: flex;
-    border: 3px solid black;
-    margin: 40px;
+    /* border: 3px solid black; */
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 0;
+    flex-wrap: wrap;
+
 
 }
 .secondsection-leftdiv{
     height: 400px;
     width: 310px;
     background: var(--gray-color);
+    padding: 40px 25px;
 }
 .secondsection-rightdiv{
     width: 340px;
+    height: 460px;
+    margin-left: 20px;
 }
 .secondsection-leftdiv h4{
+    margin-bottom: 20px;
     text-align: center;
-    margin-bottom: 30px;
 }
 .secondsection-leftdiv p{
-    margin-bottom: 30px;
-    float: right;
+   margin-bottom: 25px;
+  
 }
 
 
 /* ===== Second section ends here===== */
+
+/* third section starts here */
+.thirdsection{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 50px 0;
+    margin: 0 auto;
+}
+.thirdsection-leftdiv{
+    background: url("./images/image3.jpg");
+    height: 460px;
+    width: 340px;
+    background-size: cover;
+}
+.thirdsection-rightdiv{
+    height: 460px;
+    width: 340px;
+    background: var(--main-color);
+    padding: 40px 25px;
+}
+.thirdsection-rightdiv p{
+     margin: 25px;
+    
+    }
+    /* third section ends here */
+
+    /* footer section starts here */ 
+footer{
+    background: var(--main-color);
+    margin-top: 40px;
+    display: flex;
+    color: var(--white-color);
+    justify-content: space-evenly;
+    padding: 10px 0;
+    align-items: center;
+}
+.footericon{
+    margin: 0 5px;
+}
+.footericons-container{
+    font-size: 22px;
+}
+a{
+    text-decoration: none;
+    color: var(--white-color);
+}
+/* footer section ends here */
+/* safety  measures starts here */
+.firstsection,.secondsection, .thirdsection, .footer{
+    margin: 0 auto;
+    max-width: 1500px;
+}
